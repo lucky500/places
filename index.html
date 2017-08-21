@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.js" charset="utf-8"></script>
+  <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+     <div class="container">
+       <h1>Places</h1>
+
+       <div class="row">
+         <div class="col s6">
+           <h4>Places you visited:</h4>
+           <form>
+             <div class="input-field">
+               <input id="city" type="text" class="validate">
+               <label for="city">City</label>
+             </div>
+             <div class="input-field">
+               <input id="country" type="text" class="validate">
+               <label for="country">Country</label>
+             </div>
+             <div class="input-field">
+               <input id="landmarks" type="text" class="validate">
+               <label for="landmarks">Landmarks</label>
+             </div>
+             <div class="input-field">
+               <input id="when" type="date" class="validate">
+               <label for="when"></label>
+             </div>
+             <button type="submit" class="btn">Add</button>
+           </form>
+
+         </div>
+         <div class="col s6">
+           <h3></h3>
+           <div>
+            <ul id="show-places">
+              <li class="landmarks"></li>
+              <li class="when"></li>
+            </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </body>
+</html>
